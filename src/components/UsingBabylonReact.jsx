@@ -1,5 +1,5 @@
 import React from "react";
-import { FreeCamera, Vector3, HemisphericLight, MeshBuilder, SceneLoader } from "@babylonjs/core";
+import { FreeCamera, Vector3, HemisphericLight, SceneLoader } from "@babylonjs/core";
 import SceneComponent from "./SceneComponent";
 import '@babylonjs/loaders'
 
@@ -24,7 +24,7 @@ const onSceneReady = (scene) => {
       scene.createDefaultEnvironment();
 });
 };
-
+// eslint-disable-next-line
 export default () => (
   <div>
     <SceneComponent antialias onSceneReady={onSceneReady}  id="my-canvas" />

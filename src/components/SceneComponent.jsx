@@ -1,6 +1,6 @@
 import {Engine, Scene} from '@babylonjs/core';
 import React, { useEffect, useRef} from "react";
-
+// eslint-disable-next-line
 export default ({ antialias, engineOptions, adaptToDeviceRatio, sceneOptions, onRender, onSceneReady, ...rest}) => {
     const reactCanvas = useRef(null);
 
